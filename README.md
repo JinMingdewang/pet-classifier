@@ -59,6 +59,9 @@ python train.py --exp_name mixup --epochs 15 --lr 1e-4 --mixup_alpha 0.2
 ### 4. 评估与可视化
 
 ```bash
+# 注意：best_model.pth 默认是最后一次训练保存的模型
+# 当前为 Label Smoothing 实验的模型（测试集 90.58%）
+# 如需评估其他实验，请重新训练或使用对应的 checkpoint
 python evaluate.py --model_path best_model.pth --exp_name baseline
 ```
 
@@ -66,6 +69,8 @@ python evaluate.py --model_path best_model.pth --exp_name baseline
 - `confusion_matrix.png` — 混淆矩阵热力图
 - `gradcam_correct.png` — 正确预测样本的 Grad-CAM
 - `gradcam_wrong.png` — 错误预测样本的 Grad-CAM
+
+> 注：当前可视化基于测试表现最佳的 Label Smoothing 模型（Top-1 Acc 90.58%）。
 
 ### 5. 查看训练曲线
 
