@@ -1,0 +1,39 @@
+# 虚拟环境
+venv/
+
+# 数据集（太大，不上传）
+data/oxford-iiit-pet/
+
+# 模型权重
+*.pth
+
+# TensorBoard 日志
+runs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 生成脚本（不需要提交）
+generate_guide.py
+generate_report.py
+fix_*.py
+dataset_*.py
+
+# 教学文档（个人使用）
+*.docx
+新手教学指南.docx
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# 其他无关文件
+java_homework/
+攻略.md
+老师要求备忘.md
